@@ -9,3 +9,4 @@ router.get("/", (request: Request, response: Response) => { return response.stat
 
 // Rotas de produtos
 router.get("/listarTodosProdutos", produtosController.listarTodosOsProdutos);
+router.post("/adicionarProduto", produtosController.adicionarProduto);
