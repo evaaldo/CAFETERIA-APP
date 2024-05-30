@@ -10,3 +10,7 @@ router.get("/", (request: Request, response: Response) => { return response.stat
 // Rotas de produtos
 router.get("/listarTodosProdutos", produtosController.listarTodosOsProdutos);
 router.post("/adicionarProduto", produtosController.adicionarProduto);
+router.patch("/atualizarQuantidadeProduto/:id", produtosController.atualizarQuantidadeProduto);
+router.patch("/atualizarPrecoProduto/:id", produtosController.atualizarPrecoProduto);
+router.put("/atualizarProduto/:id", produtosController.atualizarProduto);
+router.delete("/deletarProduto/:id", produtosController.deletarProduto);

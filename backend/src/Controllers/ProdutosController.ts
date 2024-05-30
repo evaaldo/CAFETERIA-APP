@@ -23,4 +23,47 @@ export class ProdutosController {
 
     }
 
+    async atualizarQuantidadeProduto(request: Request, response: Response) {
+
+        const produto = request.body;
+        const idProduto = request.params.id;
+
+        await produtosService.atualizarQuantidadeProduto(idProduto, produto.QUANTIDADE_PRODUTO);
+
+        return response.status(200).json({ message: "Quantidade atualizada!" });
+
+    }
+
+    async atualizarPrecoProduto(request: Request, response: Response) {
+
+        const produto = request.body;
+        const idProduto = request.params.id;
+
+        await produtosService.atualizarPrecoProduto(idProduto, produto.PRECO_PRODUTO);
+
+        return response.status(200).json({ message: "Preço atualizado!" });
+
+    }
+
+    async atualizarProduto(request: Request, response: Response) {
+
+        const produto = request.body;
+        const idProduto = request.params.id;
+
+        await produtosService.atualizarProduto(idProduto, produto.NOME_PRODUTO, produto.DESCRICAO_PRODUTO, produto.PRECO_PRODUTO, produto.QUANTIDADE_PRODUTO);
+
+        return response.status(200).json({ message: "Produto atualizado!" });
+
+    }
+
+    async deletarProduto(request: Request, response: Response) {
+
+        const idProduto = request.params.id;
+
+        await produtosService.deletarProduto(idProduto);
+
+        return response.status(200).json({ message: "Produto deletado!" })
+
+    }
+
 }
