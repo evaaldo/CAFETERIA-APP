@@ -1,0 +1,20 @@
+#conteudo {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.card {
+    width: 20vw !important;
+}
+
+.card-header, #produto_preco {
+    font-weight: 700 !important;
+    color: green !important;
+}
+
+#form_buscar_produtos {
+    margin-top: 1em;
+}
