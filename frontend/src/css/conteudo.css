@@ -1,9 +1,8 @@
 #conteudo {
-    margin-top: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 1em;
+    margin-top: 2em;
 }
 
 .card {
