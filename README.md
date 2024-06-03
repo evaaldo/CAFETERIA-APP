@@ -1,6 +1,6 @@
 <h1>Aplicativo de Cafeteria</h1>
 <p>Uma solução que visa facilitar o processo de solicitação e entrega de produtos de uma cafeteria, diminuindo filas e otimizando o tempo do cliente e vendedor.</p>
-<h3>Aplicativo de Cafeteria</h3>
+<h3>Objetivo</h3>
 <p>Esse projeto visa o início de uma aplicação web para uma cafeteria interna da empresa 3 Corações e mostrar a viabilidade da mesma para o setor.</p>
 <h3>Tecnologias</h3>
 <ul>
