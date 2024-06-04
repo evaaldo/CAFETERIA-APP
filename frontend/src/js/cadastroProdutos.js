@@ -33,14 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(response => response.json())
         .then(data => {
-            // Aqui você pode tratar a resposta do servidor
-            console.log("Produto adicionado:", data);
-            // Limpar o formulário após o envio bem-sucedido
+            console.log(data);
             formCadastro.reset();
         })
         .catch(error => {
             document.getElementById("formularioCadastro").innerHTML = `
-                <div class="alert alert-danger" role="alert">
+                <div class="alert alert-danger text-center" role="alert">
                     Erro ao conectar-se com o servidor
                 </div>
             `;
