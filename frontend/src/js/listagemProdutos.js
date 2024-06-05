@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .catch(error => {
         document.getElementById("conteudo").innerHTML = `
-            <div class="alert alert-danger text-center" style="position: absolute; right: 15px; bottom: 15px;" role="alert">
+            <div class="alert alert-danger text-center" style="position: absolute; right: 15px; bo  ttom: 15px;" role="alert">
                 Erro ao conectar-se com o servidor
             </div>
         `;
