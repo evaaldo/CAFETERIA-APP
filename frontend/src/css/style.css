@@ -1,6 +1,7 @@
 @import url(./banner.css);
 @import url(./conteudo.css);
 @import url(./formulario.css);
+@import url(./sidebar.css);
 
 * {
     padding: 0;
@@ -11,6 +12,8 @@
 :root {
     --branco: #fff;
     --preto: #000;
+    --background-home: #e3e9f7;
+    --verde: #157347;
 }
 
 body {
@@ -22,4 +25,5 @@ body {
     height: 100vh;
     max-width: 100vw;
     max-height: 100vh;
+    background-color: #e3e9f7;
 }
